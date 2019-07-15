@@ -17,6 +17,7 @@ function youUrl(req, res) {
       console.log('url:', url);
       if (err) { res.send(err); }
       else {
+         console.log('title:', info.title);
          res.send(info.url)
       }
    });
